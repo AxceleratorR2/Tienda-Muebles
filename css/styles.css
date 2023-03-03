@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -8,7 +9,32 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
 /*Globales*/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -16,13 +42,17 @@ a {
 
 .contenedor {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 120rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /*Header y navegacion*/
 .nombre-sitio {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5rem;
   text-align: center;
 }
 
@@ -35,14 +65,43 @@ a {
 }
 
 .nav-principal {
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero {
   background-image: url(../img/principal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  background-position: center center;
+  height: 55rem;
+}
+
+/*Categorias*/
+.categorias {
+  padding-top: 5rem;
+}
+.categorias h2 {
+  text-align: center;
+}
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.categoria a {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  text-align: center;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  border-bottom-right-radius: 1rem;
 }
