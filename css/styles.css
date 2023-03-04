@@ -1,3 +1,8 @@
+:root {
+  --blanco: #fff;
+  --azul: #037bc0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -57,7 +62,7 @@ img {
 }
 
 .nombre-sitio span {
-  color: #037bc0;
+  color: var(--azul);
 }
 
 .contenedor-nav {
@@ -101,7 +106,33 @@ img {
 }
 
 .categoria a:hover {
-  background-color: #037bc0;
-  color: #fff;
+  background-color: var(--azul);
+  color: var(--blanco);
   border-bottom-right-radius: 1rem;
+}
+
+/*Bloque nosotros*/
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      var(--azul) 50%,
+      var(--azul) 100%
+    ),
+    url(../img/nosotros.jpg);
+  background-repeat: repeat;
+  background-size: 100%, 120rem;
+  background-position: center left;
+  padding: 10rem 0;
+}
+
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+
+.texto-nosotros {
+  grid-column: 2 / 3;
+  color: var(--blanco);
 }
