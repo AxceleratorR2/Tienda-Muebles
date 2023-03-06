@@ -1,5 +1,6 @@
 :root {
   --blanco: #fff;
+  --gris: #e1e1e1;
   --azul: #037bc0;
   --verde: #8cbc00;
 }
@@ -85,7 +86,7 @@ img {
 }
 
 .contenedor-nav {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--gris);
 }
 
 .nav-principal {
@@ -229,7 +230,7 @@ img {
 /*Footer*/
 
 .site-footer {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--gris);
   margin-top: 5rem;
   padding-top: 2rem;
 }
@@ -249,6 +250,25 @@ img {
   row-gap: 1rem;
 }
 
+.nav-footer a {
+  align-self: center;
+}
+
 .copyright {
+  border-top: 1px solid var(--gris);
   margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+/*Notostros HTML*/
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+}
+
+.informacion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
